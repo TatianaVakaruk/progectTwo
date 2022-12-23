@@ -1,6 +1,6 @@
 Site link:
 
-https://tatianavakaruk.github.io/project21/
+https://tatianavakaruk.github.io/progectTwo/
 
 The tech stack is:
 
