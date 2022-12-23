@@ -9,9 +9,7 @@ body {
 .container {
   display: flex;
   color: $white;
-  width: 1176px;
-  height: 770px;
-  margin:auto;
+ 
 }
 
 .price-card {
@@ -22,55 +20,34 @@ body {
   height: 770px;
   background-color: $grey;
   margin: auto;
+  margin-right:18px;
+
+  &:last-chaild{
+margin-right:0;
+  }
 
   &__options-list-item{
-   width:380px;
    height:50px;
     line-height:18px;
     font-size:15px;
   }
 
-  &_first {
-    margin-right: 18px;
-  }
-
-  &_second {
-    margin-right: 18px;
-  }
-
   &__title {
     text-align: center;
-
-    &_first {
-      margin-left: 140px;
-      margin-right: 140px;
-      margin-top: 33px;
-      width: 100px;
-      height: 64px;
-    }
-
-    &_second {
-      margin-top: 8px;
-      margin-left: 108px;
-      width: 164px;
-      height: 64px;
-    }
-
-    &_third {
-      margin-left: 102px;
-      margin-top: 33px;
-      width: 176px;
-      height: 64px;
+    font-weight:700;
+    margin-top:33px;
+    &_second{
+      margin-top:8px;
+      z-index:2;
     }
   }
-
-  &__title-basic {
+ &__title-basic {
     margin: 0;
     padding: 0;
     line-height: 43px;
     font-size: 35px;
     font-weight: 700;
-    text-align: center;
+    
   }
 
   &__title-website {
@@ -78,11 +55,12 @@ body {
     padding: 0;
     line-height: 24px;
     font-size: 20px;
-    text-align: center;
+    
   }
 
   &__price {
     margin-bottom: 40px;
+    margin-top:37px;
     line-height: 105px;
     width: 380px;
     height: 105px;
@@ -91,30 +69,25 @@ body {
     font-weight: 700;
 
     &_green {
-      margin-top: 37px;
-      background-color: $green;
+     background-color: $green;
     }
 
     &_blue {
-      margin-top: 37px;
-      background-color: $blue;
+     background-color: $blue;
     }
 
     &_orange {
-      margin-top: 37px;
       background-color: $orange;
     }
   }
 
   &__description {
-    margin-left: 26px;
-    margin-right: 26px;
+    padding-left: 26px;
+    padding-right: 26px;
     margin-bottom: 40px;
     line-height: 18px;
     font-size: 15px;
     text-align: center;
-    width: 327px;
-    height: 36px;
   }
 
   &__options-list {
@@ -139,15 +112,14 @@ body {
     height: 40px;
     font-size: 14px;
     color: $white;
+    cursor:pointer;
 
     &_green {
       background-color: $green;
-      cursor: pointer;
     }
 
     &_blue {
       background-color: $blue;
-      cursor: pointer;
     }
 
     &_orange {
@@ -172,6 +144,14 @@ body {
 }
 
 .arraw{
+  display:inline-block;
+  margin-top: 18px;
+  margin-left: 22px;
+  margin-right: 22px;
+  margin-bottom:22px;
+  width:15px;
+  height:13px;
+  list-style-type: none;
 
   &_green{
     background-image:url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png");
@@ -184,13 +164,4 @@ body {
   &_orange{
     background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png");
   }
-
-  display:inline-block;
-  margin-top: 18px;
-  margin-left: 22px;
-  margin-right: 22px;
-  margin-bottom:22px;
-  width:15px;
-  height:13px;
-  list-style-type: none; 
 }
