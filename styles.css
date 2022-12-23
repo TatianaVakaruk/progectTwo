@@ -24,6 +24,10 @@ body {
 .price-card:last-chaild {
   margin-right: 0;
 }
+.price-card__second {
+  position: relative;
+  top: 15px;
+}
 .price-card__options-list-item {
   height: 50px;
   line-height: 18px;
@@ -33,10 +37,6 @@ body {
   text-align: center;
   font-weight: 700;
   margin-top: 33px;
-}
-.price-card__title_second {
-  margin-top: 8px;
-  z-index: 2;
 }
 .price-card__title-basic {
   margin: 0;
@@ -78,9 +78,16 @@ body {
   font-size: 15px;
   text-align: center;
 }
+.price-card__description_second {
+  margin-bottom: 50px;
+}
 .price-card__options-list {
   padding: 0;
   margin: 0;
+}
+.price-card__options-list_second {
+  position: relative;
+  bottom: 10px;
 }
 .price-card__options-list-item:nth-child(odd) {
   background-color: #2a3438;
@@ -104,10 +111,17 @@ body {
 }
 .price-card__order-btn_blue {
   background-color: #3a6ba5;
+  margin-left: 112px;
+  margin-top: 35px;
 }
 .price-card__order-btn_orange {
   background-color: #ec632a;
   cursor: pointer;
+}
+
+.second {
+  position: relative;
+  bottom: 66px;
 }
 
 .tape {
@@ -144,6 +158,11 @@ body {
   background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png");
 }
 
+span {
+  position: relative;
+  bottom: 20px;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -153,6 +172,10 @@ html {
   min-height: 100vh;
   font-family: "Montserrat", sans-serif;
   background-color: #141b1c;
+}
+
+span {
+  margin-bottom: 40px;
 }
 
 /*# sourceMappingURL=styles.css.map */
